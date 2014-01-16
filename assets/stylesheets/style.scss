@@ -1,0 +1,23 @@
+// Colors:
+// #A9C5CF	background color for tree thing
+// #BCD5DE	background of program text
+// #3F4B56	tutor background
+// #B7CBD5	tutor text
+
+// Fonts:
+// http://www.google.com/fonts
+// montserrat for titles and bold
+// raleway for text and everything else
+
+
+$font-stack:    "Helvetica Neue", Helvetica, sans-serif;
+$primary-color: #093844;
+$secondary-color: #A9C5CF;
+$background-color-1: #A9C5CF;
+$background-color-2: #BCD5DE;
+$background-color-3: #B7CBD5;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
