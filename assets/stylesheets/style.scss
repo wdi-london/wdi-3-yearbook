@@ -1,9 +1,3 @@
-// Colors:
-// #A9C5CF	background color for tree thing
-// #BCD5DE	background of program text
-// #3F4B56	tutor background
-// #B7CBD5	tutor text
-
 // Fonts:
 // http://www.google.com/fonts
 // montserrat for titles and bold
@@ -11,13 +5,57 @@
 
 
 $font-stack:    "Helvetica Neue", Helvetica, sans-serif;
-$primary-color: #093844;
+
+$primary-color: 	#093844;
 $secondary-color: #A9C5CF;
-$background-color-1: #A9C5CF;
-$background-color-2: #BCD5DE;
-$background-color-3: #B7CBD5;
+$lightest-color: 	#FFFFFF;
+
+$background-color-1: 	#A9C5CF;
+$background-color-2:	#BCD5DE;
+$background-color-3:	#B7CBD5;
+
+// ******************************************
+// GENERAL
+// ******************************************
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
 }
+
+
+// ******************************************
+// HEADER
+// ******************************************
+
+header.main {
+  background: url("../images/class_photo.jpg") no-repeat center;
+  height: 906px;
+  
+  h1 {
+  	color: pink;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { 
+  	display: inline-block; 
+  }
+
+  a {
+  	color: $lightest-color; 
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+
+
+}
+
+
+
+
