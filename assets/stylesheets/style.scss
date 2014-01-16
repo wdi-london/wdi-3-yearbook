@@ -1,16 +1,17 @@
 // Alegreya+Sans:100,300,400,500,700,800,900
 
 // font: font-style font-variant font-weight font-size/line-height font-family;
-$header-font:  'Alegreya Sans', sans-serif;
-$font-stack:   'Raleway' "Helvetica Neue", Helvetica, sans-serif;
+$header-font:  'Helvetica Neue', sans-serif;
+$font-stack:   Helvetica, sans-serif;
 
-$primary-color: 	#093844;
+$primary-color: 	#4c4c4a;
 $secondary-color: #A9C5CF;
-$lightest-color: 	#FFFFFF;
+$primary-lght: #e9eaf3;
 
-$background-color-1: 	#A9C5CF;
-$background-color-2:	#BCD5DE;
-$background-color-3:	#B7CBD5;
+$background-color-lght-1: #A9C5CF;
+$background-color-lght-2:	#BCD5DE;
+$background-color-lght-3:	#B7CBD5;
+$background-color-drk-1:	#343844;
 
 // ******************************************
 // GENERAL
@@ -19,6 +20,10 @@ $background-color-3:	#B7CBD5;
 body {
   font: 100% $font-stack;
   color: $primary-color;
+}
+
+p{
+  line-height: 1.25em;
 }
 
 
@@ -32,21 +37,20 @@ header.main {
   background-position: bottom;
   background-origin: border-box;
   padding: 10px 30px;
-  color: $lightest-color;
+  color: $primary-lght;
   font-family: $header-font;
   
   h1 {
   	clear: both;
   	padding: 375px 0 0 20px;
   	margin: 0;
-  	font-weight: 800;
   	font-size: 3em;
   }
 
   h2{
-  	font-weight: 500;
   	padding: 0 0 75px 20px ;
   	margin: 0;
+  	font-weight: normal
   }
 
   nav{
@@ -64,24 +68,100 @@ header.main {
 	  }
 
 	  a {
-	  	color: $lightest-color; 
-	  	font-family: 'Raleway';
-	  	font-size: 1.2em;
+	  	color: $primary-lght; 
 	    display: block;
 	    padding: 6px 10px 10px;
 	    margin: 0 6px;
 	    text-decoration: none;
-	    text-transform: lowercase;
-	    background-color: rgba(255, 255, 255, 0.8)
+	    text-transform: uppercase;
+	    font-weight: bold;
 	  }
   }
+}
 
 
 .callout{
-	background-color: $background-color-3;
+	background-color: $background-color-drk-1;
+	color: $primary-lght;
+	padding:  30px 50px 50px;
+	text-align: center;
+	font-size: 1.5em;
 }
 
+
+
+.indiv-profile{
+	background-color: #bcc4cf;
+	padding: 10px 0 0 0;
+	.img-box{
+		overflow: hidden;
+		border-radius: 50%;
+		padding: 0;
+		margin: 0 auto;
+		width: 50%;
+		border: 6px solid #e7f0f5;
+
+		img{
+			width: 100%;
+		}
+	}
+
+	article{
+		padding: 5px 30px;
+		text-align: center;
+	}
 }
+
+
+.student-thumb-imgs{
+	clear: both;
+	margin: 20px 0;
+}
+
+.cols-1-of-8{
+	width: 12.5%;
+	padding: 0;
+	margin: 0;
+	float:left;
+}
+
+.cols-2-of-8{
+	width: 25%;
+	padding: 0;
+	margin: 0;
+	float:left;
+
+}
+
+.cols-6-of-8{
+	width: 75%;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+
+
+
+.full-width {
+width: 100% !important;
+height: auto !important;
+}
+
+// helpers
+
+.circular-image img {
+   width: 100% !important;
+   height: auto !important;
+   -webkit-border-radius: 150px;
+   -moz-border-radius: 150px;
+   -ms-border-radius: 150px;
+   -o-border-radius: 150px;
+    border-radius: 150px;
+                  }
+
+
+
 
 
 
