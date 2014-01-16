@@ -1,1 +1,0 @@
-GA WDI September 2013 
