@@ -47,29 +47,48 @@ header.main {
 
 .indiv-profile {
   background-color: #bcc4cf;
-  padding: 10px 0 0 0; }
+  padding: 10px 0 0 0;
+  border-top: 15px solid #FFFFFF; }
   .indiv-profile .img-box {
     overflow: hidden;
     border-radius: 50%;
     padding: 0;
     margin: 0 auto;
     width: 50%;
-    border: 6px solid #e7f0f5; }
+    border: 5px solid #FFFFFF; }
     .indiv-profile .img-box img {
       width: 100%; }
   .indiv-profile article {
     padding: 5px 30px;
-    text-align: center; }
+    text-align: center;
+    font-size: .9em;
+    line-height: 2em; }
 
 .student-thumb-imgs {
   clear: both;
-  margin: 20px 0; }
+  margin: 0; }
+
+.social-icons {
+  margin: 0 auto 10px auto;
+  padding: 0 auto 10px auto; }
+
+.social-icons img {
+  width: 10%;
+  height: 10%;
+  padding: 6px;
+  margin: 0 6px;
+  color: #e9eaf3; }
 
 .cols-1-of-8 {
   width: 12.5%;
   padding: 0;
   margin: 0;
   float: left; }
+  .cols-1-of-8 img {
+    box-sizing: border-box;
+    border-left: 15px solid #FFFFFF;
+    border-top: 15px solid #FFFFFF;
+    border-collapse: collapse; }
 
 .cols-2-of-8 {
   width: 25%;
