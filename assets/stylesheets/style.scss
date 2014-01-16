@@ -1,10 +1,8 @@
-// Fonts:
-// http://www.google.com/fonts
-// montserrat for titles and bold
-// raleway for text and everything else
+// Alegreya+Sans:100,300,400,500,700,800,900
 
-
-$font-stack:    "Helvetica Neue", Helvetica, sans-serif;
+// font: font-style font-variant font-weight font-size/line-height font-family;
+$header-font:  'Alegreya Sans', sans-serif;
+$font-stack:   'Raleway' "Helvetica Neue", Helvetica, sans-serif;
 
 $primary-color: 	#093844;
 $secondary-color: #A9C5CF;
@@ -29,30 +27,59 @@ body {
 // ******************************************
 
 header.main {
-  background: url("../images/class_photo.jpg") no-repeat center;
-  height: 906px;
+  background: url("../images/class_photo_bw3.png") no-repeat;
+  background-size: 100% ;
+  background-position: bottom;
+  background-origin: border-box;
+  padding: 10px 30px;
+  color: $lightest-color;
+  font-family: $header-font;
   
   h1 {
-  	color: pink;
+  	clear: both;
+  	padding: 375px 0 0 20px;
+  	margin: 0;
+  	font-weight: 800;
+  	font-size: 3em;
   }
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  h2{
+  	font-weight: 500;
+  	padding: 0 0 75px 20px ;
+  	margin: 0;
   }
 
-  li { 
-  	display: inline-block; 
+  nav{
+
+	  ul {
+	    margin: 10px 0;
+	    padding: 0;
+	    list-style: none;
+	    float: right;
+	  }
+
+	  li { 
+	  	display: inline-block; 
+
+	  }
+
+	  a {
+	  	color: $lightest-color; 
+	  	font-family: 'Raleway';
+	  	font-size: 1.2em;
+	    display: block;
+	    padding: 6px 10px 10px;
+	    margin: 0 6px;
+	    text-decoration: none;
+	    text-transform: lowercase;
+	    background-color: rgba(255, 255, 255, 0.8)
+	  }
   }
 
-  a {
-  	color: $lightest-color; 
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-  }
 
+.callout{
+	background-color: $background-color-3;
+}
 
 }
 
