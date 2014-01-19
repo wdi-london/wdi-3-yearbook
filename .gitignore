@@ -16,6 +16,7 @@
 
 # Ignore all ds store files
 .DS_Store
+.BridgeCache
 
 # Ignore notes folder
 /notes/
