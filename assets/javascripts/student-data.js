@@ -113,7 +113,7 @@ var studentData = {
   },
   oli: {
     name: "Oliver Peate",
-    description: "Should make a Chrome extension to generate intriguing short bios. Until then, lets say Oli loves web development and technology. He claims to know which end of an e-commerce retailer makes profit.",
+    description: "Should make a Chrome extension to generate intriguing short bios. Until then, lets say Oli loves web development and technology.",
     linkedin: "http://www.linkedin.com/in/oliverpeate",
     github: "https://github.com/odlp",
     twitter: "https://twitter.com/olipeate",
