@@ -17,10 +17,23 @@ function updateStudentProfile(ele) {
   $studentPhoto.attr('src', $studentThumb.attr('src'));
   $studentName.text(studentInfo.name);
   $studentDesc.text(studentInfo.description);
-  $studentLinkedin.attr('href', studentInfo.linkedin);
-  $studentGithub.attr('href', studentInfo.github);
-  $studentTwitter.attr('href', studentInfo.twitter);
-  $studentSite.attr('href', studentInfo.site);
+
+  $.each([
+    {data: studentInfo.linkedin,  ele: $studentLinkedin}, 
+    {data: studentInfo.github,    ele: $studentGithub}, 
+    {data: studentInfo.twitter,   ele: $studentTwitter}, 
+    {data: studentInfo.site,      ele: $studentSite} 
+  ], function(i, item) {
+    updateLinks(item);
+  });
+}
+
+function updateLinks(item) {
+  if (item.data.length > 0) {
+    item.ele.attr('href', item.data).show(); // update link href & ensure the element is visible
+  } else {
+    item.ele.hide(); // hide the link
+  }
 }
 
 $(function() {
