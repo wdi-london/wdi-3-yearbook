@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="assets/stylesheets/main.css">
     <link rel="stylesheet" href="assets/stylesheets/style.css">
     <script src="assets/javascripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <script src="assets/javascripts/main.js"></script>
   </head>
   <body>
     <header class="top">
@@ -63,24 +62,24 @@
           
           <!-- student profiles -->
           <div class="row profiles">
-            <div class="cols-3-of-12 profile">
-              <img src="assets/images/headshots/IMG_5493_maloney_bw.jpg" >
+            <div class="cols-3-of-12 profile" id="student-profile">
+              <img src="assets/images/headshots/IMG_5493_maloney_bw.jpg" class="student-photo" style="display:none;">
               <article>
-              <h3>Maloney Liu</h3> 
-              <p>Bostonified geek from Hong Kong with digital/creative and startup experience. Writes words and code, builds brands and products.</p>
+                <h3 class="student-name">Welcome</h3> 
+                <p class="student-desc">Intro intro intro.</p>
               </article>
               <div class="row social-media">
                 <div class="cols-3-of-12">
-                  <img src="assets/images/linked_in.png">
+                  <a href="http://linkedin.com/" class="student-linkedin" style="display:none;"><img src="assets/images/linked_in.png"></a>
                 </div>
                 <div class="cols-3-of-12">
-                  <img src="assets/images/git.png">
+                  <a href="http://github.com" class="student-github" style="display:none;"><img src="assets/images/git.png"></a>
                 </div>
                 <div class="cols-3-of-12">
-                  <img src="assets/images/twitter.png">
+                  <a href="http://twitter.com" class="student-twitter" style="display:none;"><img src="assets/images/twitter.png" class="student-twitter"></a>
                 </div>
                 <div class="cols-3-of-12">
-                  <img src="assets/images/browser.png">
+                  <a href="http://www.example.com/" class="student-site" style="display:none;"><img src="assets/images/browser.png"></a>
                 </div>
               </div>
             </div>
@@ -89,29 +88,29 @@
             <div class="cols-9-of-12">
               <div class="row">
                 <div class="cols-1-of-5">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5302_adam_bw.jpg">
-                  <img class="square-thumb" src="assets/images/headshots/_mg_5370_alex_bw.jpg">
-                  <img class="selected square-thumb" src="assets/images/headshots/IMG_5493_maloney_bw.jpg">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5302_adam_bw.jpg" data-id="adam">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/_mg_5370_alex_bw.jpg" data-id="alexh">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5493_maloney_bw.jpg" data-id="maloney">
                 </div>
                 <div class="cols-1-of-5">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5338_jonny_bw.jpg">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5363_jack_bw.jpg">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5401_jamie_bw.jpg">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5338_jonny_bw.jpg" data-id="jonny">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5363_jack_bw.jpg" data-id="jack">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5401_jamie_bw.jpg" data-id="jamie">
                 </div>
                 <div class="cols-1-of-5">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5408_alexf_bw.jpg">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5431_daida_bw.jpg">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5458_selina_bw.jpg">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5408_alexf_bw.jpg" data-id="alexf">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5431_daida_bw.jpg" data-id="daida">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5458_selina_bw.jpg" data-id="selina">
                 </div>
                 <div class="cols-1-of-5">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5568_sophie_bw.jpg">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5523_winna_bw.jpg">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5314_ralph_bw.jpg">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5568_sophie_bw.jpg" data-id="sophie">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5523_winna_bw.jpg" data-id="winna">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5314_ralph_bw.jpg" data-id="ralph">
                 </div>
                 <div class="cols-1-of-5">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5651_sharif_bw.jpg">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5597_neha_bw.jpg">
-                  <img class="square-thumb" src="assets/images/headshots/IMG_5554_oli_bw.jpg">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5651_sharif_bw.jpg" data-id="sharif">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5597_neha_bw.jpg" data-id="neha">
+                  <img class="square-thumb student-icon" src="assets/images/headshots/IMG_5554_oli_bw.jpg" data-id="oli">
                 </div>
               </div>
             </div>
@@ -212,9 +211,10 @@
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-    <script src="js/main.js"></script>
+    <script src="/assets/javascripts/student-data.js"></script>
+    <script src="/assets/javascripts/main.js"></script>
 
     <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
