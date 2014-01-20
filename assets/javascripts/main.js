@@ -14,7 +14,7 @@ function updateStudentProfile(ele) {
   var studentID     = $studentThumb.attr('data-id');
   var studentInfo   = studentData[studentID];
 
-  $studentPhoto.attr('src', $studentThumb.attr('src'));
+  $studentPhoto.attr('src', $studentThumb.attr('src')).show();
   $studentName.text(studentInfo.name);
   $studentDesc.text(studentInfo.description);
 
