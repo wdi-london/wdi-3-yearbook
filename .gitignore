@@ -22,4 +22,4 @@
 /notes/
 
 # sass converter cache files
-assets/stylesheets/.sass-cache/
+/assets/stylesheets/.sass-cache/
