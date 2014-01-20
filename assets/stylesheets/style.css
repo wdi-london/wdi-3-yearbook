@@ -37,6 +37,9 @@ h5 {
   font-size: .5em;
   font-weight: normal; }
 
+a {
+  text-decoration: none; }
+
 header.top {
   background-color: #9a9a9b;
   font-family: "Lato", sans-serif;
