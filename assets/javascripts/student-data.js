@@ -9,7 +9,7 @@ var studentData = {
   },
   alexf: {
     name: "Adebamigbe Fasanmade",
-    description: "I am a technology enthusiast. GA has added to my skills as a developer and has given me a chance to work with people from diverse backgrounds.",
+    description: "I am a technology enthusiast and like working with people from diverse backgrounds.",
     linkedin: "http://www.linkedin.com/pub/adebamigbe-fasanmade/30/764/739",
     github: "https://github.com/Adebamigbe",
     twitter: "",
@@ -56,7 +56,7 @@ var studentData = {
     site: ""
   },
   daida: {
-    name: "Daida Medin",
+    name: "Daida Medina",
     description: "Don't ask me. I'm just a girl!",
     linkedin: "http://www.linkedin.com/in/daidamedina",
     github: "https://github.com/dmesu",
