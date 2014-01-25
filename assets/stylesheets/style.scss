@@ -89,6 +89,7 @@ header.top {
   	height: 100%;
   	position: absolute;
   	z-index: 10;
+  	pointer-events: none;
   }
 
   .text-layer{
