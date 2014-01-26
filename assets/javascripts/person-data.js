@@ -118,5 +118,37 @@ var studentData = {
     github: "https://github.com/odlp",
     twitter: "https://twitter.com/olipeate",
     site: "http://oliverpeate.com/"
+  },
+  gerry: {
+    name: "Geraud Mauthe",
+    description: "A self-taught developer, Geraud has over 7 years of experience in web development. He worked in gaming , e-mailing, and has been freelancing for over a year. He specializes in Rails, testing and javascript.",
+    linkedin: "http://www.linkedin.com/in/geraudmathe",
+    github: "https://github.com/geraudmathe",
+    twitter: "https://twitter.com/papiersdundev",
+    site: "https://generalassemb.ly/instructors/geraud-mathe/1554"
+  },
+  jon: {
+    name: "Jon Chambers",
+    description: "Energy drink enthusiast",
+    linkedin: "http://www.linkedin.com/in/jonathanmarkchambers ",
+    github: "https://github.com/jmchambers",
+    twitter: "https://twitter.com/jon_m_chambers",
+    site: ""
+  },
+  david: {
+    name: "David Grilli",
+    description: "Thinker, geek, drummer, nerd · I believe in technology bringing people together",
+    linkedin: "http://linkedin.com/in/djGrill ",
+    github: "http://github.com/djGrill",
+    twitter: "http://twitter.com/djGrill",
+    site: "http://djgrill.tumblr.com"
+  },
+  julien: {
+    name: "Julien Deslangles-Blanch",
+    description: "Gadget/new tech aficionado, lifelong expat & hot chocolate enthusiast - also WDI Instructor at GA",
+    linkedin: "http://www.linkedin.com/in/deslangles",
+    github: "https://github.com/jdeslangles",
+    twitter: "https://twitter.com/JDeslangles",
+    site: ""
   }
 }

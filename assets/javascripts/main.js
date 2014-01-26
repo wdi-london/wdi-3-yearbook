@@ -1,28 +1,28 @@
-function swapStudent() {
+function swapPerson() {
   if ($(this).hasClass('selected')) {
     // already selected
   } else {
     // update student displayed
-    $studentIcons.filter('.selected').removeClass('selected'); // remove selected class from previous student
+    $personIcons.filter('.selected').removeClass('selected'); // remove selected class from previous student
     $(this).addClass('selected');
     updateStudentProfile(this);
   }
 };
 
-function updateStudentProfile(ele) {
-  var $studentThumb = $(ele);
-  var studentID     = $studentThumb.attr('data-id');
-  var studentInfo   = studentData[studentID];
+function updatePersonProfile(ele) {
+  var $personThumb = $(ele);
+  var personID     = $personThumb.attr('data-id');
+  var personInfo   = personData[studentID];
 
-  $studentPhoto.attr('src', $studentThumb.attr('src')).show();
-  $studentName.text(studentInfo.name);
-  $studentDesc.text(studentInfo.description);
+  $personPhoto.attr('src', $personThumb.attr('src')).show();
+  $personName.text(personInfo.name);
+  $personDesc.text(personInfo.description);
 
   $.each([
-    {data: studentInfo.linkedin,  ele: $studentLinkedin}, 
-    {data: studentInfo.github,    ele: $studentGithub}, 
-    {data: studentInfo.twitter,   ele: $studentTwitter}, 
-    {data: studentInfo.site,      ele: $studentSite} 
+    {data: personInfo.linkedin,  ele: $personLinkedin}, 
+    {data: personInfo.github,    ele: $personGithub}, 
+    {data: personInfo.twitter,   ele: $personTwitter}, 
+    {data: personInfo.site,      ele: $personSite} 
   ], function(i, item) {
     updateLinks(item);
   });
@@ -38,16 +38,16 @@ function updateLinks(item) {
 
 $(function() {
   // cache element selections for re-use:
-  $studentIcons     = $('.student-icon');
-  $studentProfile   = $('#student-profile');
-  $studentName      = $studentProfile.find('.student-name');
-  $studentDesc      = $studentProfile.find('.student-desc');
-  $studentPhoto     = $studentProfile.find('.student-photo');
-  $studentLinkedin  = $studentProfile.find('.student-linkedin');
-  $studentGithub    = $studentProfile.find('.student-github');
-  $studentTwitter   = $studentProfile.find('.student-twitter');
-  $studentSite      = $studentProfile.find('.student-site');
+  $personIcons     = $('.person-icon');
+  $personProfile   = $('#person-profile');
+  $personName      = $personProfile.find('.person-name');
+  $personDesc      = $personProfile.find('.person-desc');
+  $personPhoto     = $personProfile.find('.person-photo');
+  $personLinkedin  = $personProfile.find('.person-linkedin');
+  $personGithub    = $personProfile.find('.person-github');
+  $personTwitter   = $personProfile.find('.person-twitter');
+  $personSite      = $personProfile.find('.person-site');
 
-  // student icon click event
-  $studentIcons.on('click', swapStudent);
+  // person icon click event
+  $personIcons.on('click', swapPerson);
 });
