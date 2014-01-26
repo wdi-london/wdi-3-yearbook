@@ -1,4 +1,4 @@
-var studentData = {
+var personData = {
   adam: {
     name: "Adam Buchan",
     description: "Venture capitalist turned entrepreneur",
