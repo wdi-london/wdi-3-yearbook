@@ -121,7 +121,7 @@ img {
 
 .square-thumb {
   padding: 15px 0;
-  width: 100% !important;
+  width: 100%;
   height: auto !important; }
 
 .project {
@@ -211,7 +211,7 @@ footer {
 
 .row {
   padding: 0;
-  margin: 0 -15px; }
+  margin: 0; }
 
 .row:before,
 .row:after {

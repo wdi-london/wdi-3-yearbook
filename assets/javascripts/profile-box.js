@@ -14,8 +14,6 @@ function ProfilesBox(sel) {
     self.$personTwitter   = self.$profileBox.find('.person-twitter');
     self.$personSite      = self.$profileBox.find('.person-site');
 
-    // console.log(self.$personIcons);
-    // person icon click event
     self.$personIcons.on('click', self.swapPerson);
   }
 
@@ -25,14 +23,13 @@ function ProfilesBox(sel) {
       // already selected
     } else {
       // update person displayed
-      self.$personIcons.filter('.selected').removeClass('selected'); // remove selected class from previous person
+      self.$personIcons.filter('.selected').removeClass('selected'); 
       $(image).addClass('selected');
       self.updatePersonProfile(image);
     }
   };
 
   self.updatePersonProfile = function(ele) {
-    
     var $personThumb = $(ele);
     var personID     = $personThumb.attr('data-id');
     var personInfo   = personData[personID];
