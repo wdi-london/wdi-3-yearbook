@@ -34,6 +34,7 @@ function ProfilesBox(sel) {
     var personID     = $personThumb.attr('data-id');
     var personInfo   = personData[personID];
 
+    self.$personProfile.css({'display': 'block'});
     self.$personPhoto.attr('src', $personThumb.attr('src')).show();
     self.$personName.text(personInfo.name);
     self.$personDesc.text(personInfo.description);

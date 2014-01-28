@@ -1,7 +1,7 @@
 var personData = {
   adam: {
     name: "Adam Buchan",
-    description: "Venture capitalist turned entrepreneur",
+    description: "Venture capitalist turned entrepreneur.",
     linkedin: "http://uk.linkedin.com/in/adambuchan/",
     github: "http://github.com/AdamBuchan",
     twitter: "",
@@ -9,7 +9,7 @@ var personData = {
   },
   alexf: {
     name: "Adebamigbe Fasanmade",
-    description: "I am a technology enthusiast and like working with people from diverse backgrounds.",
+    description: "Technology enthusiast who likes working with people from diverse backgrounds.",
     linkedin: "http://www.linkedin.com/pub/adebamigbe-fasanmade/30/764/739",
     github: "https://github.com/Adebamigbe",
     twitter: "",
@@ -17,7 +17,7 @@ var personData = {
   },
   alexh: {
     name: "Alex Hamlin",
-    description: "Experienced management consultant meets coder, ultimate ying and yang?",
+    description: "Experienced management consultant meets coder. Ultimate ying and yang?",
     linkedin: "https://uk.linkedin.com/pub/alex-hamlin/5/415/90b/",
     github: "https://github.com/TheVitruvian",
     twitter: "https://twitter.com/Londonar",
@@ -41,7 +41,7 @@ var personData = {
   },
   jack: {
     name: "Jack Lalley",
-    description: "A UI/UX Designer, Jack finally decided he should trade in PSDs for the real thing.",
+    description: "UI/UX designer who finally decided he should trade in PSDs for the real thing.",
     linkedin: "http://www.linkedin.com/pub/jack-lalley/86/317/399",
     github: "https://github.com/jckly",
     twitter: "https://twitter.com/jack_lalley",
@@ -81,7 +81,7 @@ var personData = {
   },
   winna: {
     name: "Winna Bridgewater",
-    description: "Designer and developer",
+    description: "Designer and developer. And cookie baker.",
     linkedin: "http://www.linkedin.com/in/winnab",
     github: "https://github.com/winnab",
     twitter: "http://www.twitter.com/thepreviewmode",
@@ -89,7 +89,7 @@ var personData = {
   },
   ralph: {
     name: "Ralph Reid",
-    description: "A Londoner via Venezuela and is a born Chicagoan. Loves technology, creative problem solving & all things Reggae.",
+    description: "A Londoner via Venezuela and is a born Chicagoan. Loves technology, creative problem solving and all things Reggae.",
     linkedin: "http://uk.linkedin.com/in/reidralph/",
     github: "https://github.com/ralphreid",
     twitter: "https://twitter.com/juniorreidirie",
@@ -121,7 +121,7 @@ var personData = {
   },
   gerry: {
     name: "Geraud Mauthe",
-    description: "A self-taught developer, Geraud has over 7 years of experience in web development. He worked in gaming , e-mailing, and has been freelancing for over a year. He specializes in Rails, testing and javascript.",
+    description: "A self-taught developer, Geraud has over seven years of experience in web development. He specializes in Rails, testing and javascript.",
     linkedin: "http://www.linkedin.com/in/geraudmathe",
     github: "https://github.com/geraudmathe",
     twitter: "https://twitter.com/papiersdundev",
@@ -129,7 +129,7 @@ var personData = {
   },
   jon: {
     name: "Jon Chambers",
-    description: "Energy drink enthusiast",
+    description: "Energy drink enthusiast.",
     linkedin: "http://www.linkedin.com/in/jonathanmarkchambers ",
     github: "https://github.com/jmchambers",
     twitter: "https://twitter.com/jon_m_chambers",
@@ -137,7 +137,7 @@ var personData = {
   },
   david: {
     name: "David Grilli",
-    description: "Thinker, geek, drummer, nerd · I believe in technology bringing people together",
+    description: "Thinker, geek, drummer, nerd. I believe in technology bringing people together.",
     linkedin: "http://linkedin.com/in/djGrill ",
     github: "http://github.com/djGrill",
     twitter: "http://twitter.com/djGrill",
@@ -145,7 +145,7 @@ var personData = {
   },
   julien: {
     name: "Julien Deslangles-Blanch",
-    description: "Gadget/new tech aficionado, lifelong expat & hot chocolate enthusiast - also WDI Instructor at GA",
+    description: "Gadget/new tech aficionado, lifelong expat and hot chocolate enthusiast. Also, WDI Instructor at GA.",
     linkedin: "http://www.linkedin.com/in/deslangles",
     github: "https://github.com/jdeslangles",
     twitter: "https://twitter.com/JDeslangles",
