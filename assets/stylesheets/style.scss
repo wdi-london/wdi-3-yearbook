@@ -4,222 +4,18 @@
 
 // <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 
-$header-font:  'Lato', sans-serif;;
-$font-stack:   Helvetica, sans-serif;
-$dark6-6: #333031;
-$dark5-6: #454445;
-$dark4-6: #9A9A9B;
-$dark3-6: #D5D5D6;
-$dark2-6: #EAE9EA;
-$dark1-6: #F9F9FA;
-$dark0-6: #FFFFFF;
-
-// ************************************************************************************************************
-// general
-// ************************************************************************************************************
-body{
-  font: 100% $font-stack;
-  color: $dark6-6;
-}
-
-p{ line-height: 1.5em }
-
-h1, h2, h3, h4, h5, h6{
-	font-family: $header-font;
-}
-
-h1{
-	color: $dark4-6;
-	font-weight: 300;
-	font-size: 2em;
-}
-
-h2{
-	color: $dark5-6;
-	margin: 40px 0 10px 0;
-	padding: 15px 0 0 0;
-	border-top: 1px dotted $dark3-6;
-	font-weight: 300;
-}
-
-h3{
-	color: $dark4-6;
-	margin: 10px 0 10px 0;
-	font-weight: 400;
-}
-
-h4{
-	line-height: 1.5em;
-}
-
-h5{
-	color: $dark4-6;
-	line-height: 1.5em;
-	font-weight: 400;
-}
-
-.small{ 
-	font-size: .5em;
-	font-weight: normal;
-}
-
-a{
-	text-decoration: none;
-}
-
-// ************************************************************************************************************
-// header
-// ************************************************************************************************************
-
-header.top {
-  background-color: $dark4-6;
-  font-family: $header-font;
-  position: relative;
-  width: 100%;
-  min-height: 525px;
-  margin-bottom: 20px;
-
-  .pic-layer{
-  	background: url("../images/class_photo_bw3.png") no-repeat;
-  	background-size: 100%;
-  	background-position: bottom;
-  	background-origin: border-box;
-  	opacity: .45;
-  	width: 100%;
-  	height: 100%;
-  	position: absolute;
-  	z-index: 10;
-  	pointer-events: none;
-  }
-
-  .text-layer{
-  	width: 100%;
-  	height: 100%;
-  	padding: 20px;
-  	margin: 0;
-  	position: absolute;
-  	z-index: 1;
-  	letter-spacing: .075em;
-  	text-transform: uppercase;
-
-	  nav{
-		  ul {
-		    margin: 0;
-		    padding: 200px 0 0 0;
-		    list-style: none;
-		    float: left;
-		  }
-
-		  li { 
-		  	display: inline-block; 
-		  }
-
-		  a {
-		  	margin: 0 10px 10px 0;
-		  	padding: 0;
-		  	display: block;
-		  	color: $dark6-6; 
-			  border-bottom: 2px solid $dark6-6;
-		    text-decoration: none;
-		    font-weight: 900;
-		  }
-	  }
-
-	  h1 {
-	  	color: $dark6-6;
-	  	clear: both;
-	  	padding: 0 0 212px  0;
-	  	margin: 0;
-	  	font-size: 3em;
-	  	text-transform: uppercase;
-	  	font-weight: 900;
-	  }
-
-	  .small{
-	  	font-weight: 700;
-	  }
-  }
-}
-
-// ************************************************************************************************************
-// body
-// ************************************************************************************************************
-
-.selected{
-	opacity: .5;
-}
-
-img{
-	width: 100%;
-}
-
-.profile{
-	padding: 15px 15px;
-
-	img{
-		margin: 15px 0 0 0;
-		width: 100%;
-	}
-
-	p{
-		margin: 0;
-		font-size: .9em;
-	}
-}
-
-
-.callout{
-	p{
-		margin: 0;
-		padding: 0;
-	}
-}
-
-.social-media{
-	margin: 0 20px 0 0 !important;
-	
-	div{
-		padding: 0 15px 0 0 !important;
-	}
-
-	img{
-		padding: 0;
-	}
-}
-
-.square-thumb {
-	padding: 15px 0;
-	width: 100% ;
-	height: auto !important;
-}
-
-.project{
-	padding: 0 30px 0 0;
-	margin: 0;
-	border-right: 1px dotted $dark3-6;
-}
-
-.instructor{
-	background-color: $dark2-6;
-	width: 90%;
-	height: auto;
-	border-radius: 50%;
-}
-
-.instructors{
-	p{
-		margin-top: 0;
-	}
-}
-
-// ************************************************************************************************************
-// footer
-// ************************************************************************************************************
-footer{
-	background-color: $dark2-6;
-	margin: 45px 0 0 0;
-	padding: 15px;
-}
+$header-font:  'Lato', sans-serif;
+$font-stack:   'Helvetica Neue', Helvetica, sans-serif;
+$dark7-7: #060606;
+$dark6-7: #333031;
+$dark5-7: #454445;
+$dark4-7: #575657;
+$dark3-7: #D5D5D6;
+$dark2-7: #EAE9EA;
+$dark1-7: #F9F9FA;
+$dark0-7: #FFFFFF;
+$pic-height: 527px;
+$transition-speed: all 0.75s;
 
 // ************************************************************************************************************
 // helpers
@@ -240,42 +36,6 @@ footer{
   margin-left: auto;
 }
 
-.pull-right {
-  float: right !important;
-}
-
-.pull-left {
-  float: left !important;
-}
-
-.hide {
-  display: none !important;
-}
-
-.show {
-  display: block !important;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-
-.hidden {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-// ************************************************************************************************************
-// columns
-// ************************************************************************************************************
 *,
 *:before,
 *:after {
@@ -334,8 +94,371 @@ footer{
   clear: both;
 }
 
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// ************************************************************************************************************
+// general
+// ************************************************************************************************************
+body{
+  font: 18px $font-stack;
+  color: $dark6-7;
+  margin: 0;
+  padding: $pic-height 0 0 0;
+
+}
+
+p{ line-height: 1.5em }
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $header-font;
+}
+
+h1{
+	color: $dark4-7;
+	font-weight: 300;
+	font-size: 2em;
+}
+
+h2{
+	color: $dark5-7;
+	margin: 40px 0 10px 0;
+	padding: 15px 0 5px;
+	border-top: 1px dotted $dark3-7;
+	font-weight: 300;
+}
+
+h3{
+	color: $dark4-7;
+	margin: 5px 0 10px 0;
+	font-weight: 400;
+}
+
+h4{
+	line-height: 1.5em;
+}
+
+h5{
+	color: $dark4-7;
+	line-height: 1.5em;
+	font-weight: 400;
+}
+
+.small{ 
+	font-size: .5em;
+	font-weight: normal;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+// ************************************************************************************************************
+// animation trigger points
+// ************************************************************************************************************
+
+a.anchor{
+  display: block; 
+  position: relative; 
+  top: -235px; 
+  visibility: hidden;
+}
+
+a.anchor-high{
+	top: -590px; 
+}
+a.trigger{
+	display: block; 
+	position: relative; 
+	top: 250px; 
+	visibility: hidden;
+}
+
+// ************************************************************************************************************
+// header
+// ************************************************************************************************************
+
+.ha-header {
+	font-size: .9em;
+	position: fixed;
+	width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: $transition-speed;
+  -moz-transition: $transition-speed;
+  transition: $transition-speed;
+  background-color: $dark5-7;
+
+  .pic-layer{
+  	background: url("../images/class_photo_bw3_shorter.png") no-repeat;
+  	background-size: 100%;
+  	background-position: middle;
+  	background-origin: border-box;
+  	opacity: .3;
+  	width: 100%;
+  	height: $pic-height;
+  	position: absolute;
+  	z-index: 1000;
+  	pointer-events: none;
+  	overflow: hidden;
+  	-webkit-transform: translateY(0%);
+  	-moz-transform: translateY(0%);
+  	transform: translateY(0%);
+  	-webkit-transition: $transition-speed;
+  	-moz-transition: $transition-speed;
+  	transition: $transition-speed;
+  }
+
+  .text-layer{
+  	opacity: 1.0;
+  	font-family: $header-font;
+  	width: auto;
+  	height: $pic-height;
+  	margin: 0 auto;
+  	padding: 225px 30px 0;
+  	letter-spacing: .075em;
+  	text-transform: uppercase;
+  	z-index: 50;
+  	-webkit-transform: translateY(0%);
+  	-moz-transform: translateY(0%);
+  	transform: translateY(0%);
+  	-webkit-transition: $transition-speed;
+  	-moz-transition: $transition-speed;
+  	transition: $transition-speed;
+
+
+	  nav{
+		  ul {
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+		    float: left;
+		    min-height: 1px;
+		  }
+
+		  li { 
+		  	display: inline-block; 
+		  }
+
+		  a {
+		  	color: $dark7-7; 
+		  	margin: 0 10px 10px 0;
+		  	padding: 0;
+		  	display: block;
+			  border-bottom: 2px solid $dark7-7;
+		    text-decoration: none;
+		    font-weight: 900;
+		  }
+	  }
+
+	  h1 {
+	  	color: $dark7-7;
+	  	clear: both;
+	  	margin: 0;
+	  	font-size: 3em;
+	  	text-transform: uppercase;
+	  	font-weight: 900;
+	  }
+
+	  .small{
+	  	font-weight: 700;
+	  }
+  }
+}
+
+
+.ha-header-small{
+  background-color: $dark7-7;
+	.text-layer {
+		padding: 30px !important;
+		height: auto !important;
+		h1 { color: $dark4-7; }
+		nav > ul > li > a { 
+			color: $dark4-7; 
+			border-bottom: 2px solid $dark4-7;
+		}
+	}
+	.pic-layer{
+		opacity: 0 !important;
+	}
+
+}
+
+.ha-header-large{
+	height: 525px;
+}
+
+
+// ************************************************************************************************************
+// program section
+// ************************************************************************************************************
+
+.callout{
+	p{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+// ************************************************************************************************************
+// students and instructors sections
+// ************************************************************************************************************
+
+.selected{
+	opacity: .5;
+}
+
+.intro-text{
+	p{
+		padding: 0;
+		margin: 0 0 1.5em 0;
+	}
+}
+
+.person-profile{
+	margin: 0 0 1.5em;
+	padding: 1em;
+	background-color: $dark2-7;
+
+	article { margin: 1em; }
+	
+	.person-photo { margin: 1em 0; }
+
+	h3{
+		margin: 0 0 10px 0;
+		text-transform: uppercase;
+		color: $dark6-7;
+		font-weight: 700;
+
+	}
+
+	p{
+		margin: 0 0 10px 0;
+		font-style: oblique;
+	}
+
+	.social-media{
+	 vertical-align: bottom;
+	 a{
+	 	margin: 0;
+	 	padding: 1px;
+	 }
+	 a > img{
+			margin: 0;
+			padding: 0;
+			max-width: 2em;
+			min-width: 1em;
+		}
+	}
+
+}
+
+.person-icon {
+	margin: 5px 0 !important;
+	width: 100% ;
+	height: auto !important;
+}
+
+
+// ************************************************************************************************************
+// concepts section
+// ************************************************************************************************************
+
+.concepts{
+	ul{
+		font-size: .8em;
+		list-style: none;
+		padding: 0 0 0 10px;
+		margin: 0;
+		border-left: 2px solid $dark2-7;
+	}
+	li{
+		padding: 3px 0;
+		font-weight: normal;
+	}
+	h2{
+		padding: 15px 0 10px 0;
+		margin-bottom: 0;
+	}
+	p{		
+		padding: 0 0 20px 0;
+		margin: 0;
+	}
+}
+
+// ************************************************************************************************************
+// footer
+// ************************************************************************************************************
+
+footer{
+	border-top: 1px dotted $dark3-7;
+	font-family: $header-font;
+	font-size: .6em;
+	width: 100%;
+	margin: 45px 0 0 0;
+	padding: 0;
+	
+	span{ padding: 0 5px; }
+	
+	p{
+		letter-spacing: .03em;
+		color: $dark5-7;
+		background-color: $dark2-7;
+		text-align: right;
+		margin: 5px 0  0 0;
+		padding: 15px 10px 20px;
+	}
+}
+
+// ************************************************************************************************************
+// columns
+// ************************************************************************************************************
+
+
 [class*="cols-"] {
-	padding: 0 15px;
+	padding: 0 5px;
 	margin: 0;
 	min-height: 1px;
 	position: relative;
