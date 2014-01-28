@@ -17,214 +17,309 @@
     <script src="assets/javascripts/person-data.js"></script>
     <script src="assets/javascripts/profile-box.js"></script>
     <script src="assets/javascripts/main.js"></script>
-  
   </head>
   <body>
-    <header class="top">
-      <div class="pic-layer">
-      </div>
-      <div class="text-layer">
-        <nav>
-          <ul>
-            <li><a href="#program">Program</a></li>
-            <li><a href="#students">Students</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#instructors">Instructors</a></li>
-          </ul>
-        </nav>
-        <h1>Web Development Immersive <span class="small">General Assembly: Autumn/Winter 2013</span></h1>
-      </div>
+    <header id="ha-header" class="ha-header ha-header-large">
+        <div class="pic-layer">
+        </div>
+        <div class="text-layer">
+          <nav>
+            <ul>
+              <li><a href="#program">Program</a></li>
+              <li><a href="#students">Students</a></li>
+              <li><a href="#concepts">Concepts</a></li>
+              <li><a href="#instructors">Instructors</a></li>
+            </ul>
+          </nav>
+          <h1>Web Development Immersive <span class="small">General&nbsp;Assembly:&nbsp;Autumn/Winter&nbsp;2013</span></h1>
+        </div>
     </header>
-
+    <a class="trigger ha-waypoint" data-animate-down="ha-header-small" data-animate-up="ha-header-large"></a>
     <div id="main" class="container">
-      <div class="row">
+      <!-- spacer -->
+      <!-- <div class="spacer cols-2-of-12"></div> -->
+      
+      <!-- main content-->
+      <div class="main cols-12-of-12">
         
-        <!-- spacer -->
-        <div class="cols-2-of-12"></div>
-        
-        <!-- main -->
-        <div class="cols-8-of-12">
-          
-          <!-- intro text -->
-          <div class="row">
-            <div class="cols-12-of-12">
-              <article class="callout">
-                <a name="program"><h1>The Program</h1></a>
-                <p>12 weeks of intensive web development training learning a range of programming techniques and languages.</p>
-              </article>
-            </div>
-          </div>
+        <!-- program section -->
+        <section class="row program">
+          <article class="callout">
+            <a name="program" class="anchor anchor-high"></a>                
+            <h1>The Program</h1>
+            <p>12 weeks of intensive web development training learning a range of programming techniques and languages.</p>
+          </article>
+        </section>
 
-          <!-- student section -->
-          <div class="row">
-            <div class="cols-12-of-12">
-              <a name="students"><h2>The Students</h2></a>
-            </div>
+        <!-- student section -->
+        <section class="students">
+          <div class="row intro-text">
+            <h2>The Students</h2>
+            <a name="students" class="anchor"></a>
+            <h3>The London WDI Session 3 Coding Collective</h3> 
+            <p>We faced missing routes, broken links, aborted rake tasks, rejected mass-assignments, failed deployments, nilClasses, illegal nestings, conflicted merges, rougue debuggers, unexpected keyword ends, incomplete divs, unintentional infinite loops, uncooperative asset pipelines, empty migrations, unresponsive APIs, undefined defined methods, overly-sassy css, dirty data, faulty gems, terrible animated gifs, excessive pizza, punchy classmates, demanding instructors and long days. And we won!</p>
           </div>
-          
-          <!-- student profiles -->
+          <!-- profile -->
           <div id="student-profiles" class="profiles">
-            <div class="row person-profile">
-              <img src="assets/images/headshots/IMG_5493_maloney_bw.jpg" class="person-photo cols-3-of-12" style="display:none;">
+            <div class="row person-profile" style="display:none;">
+              <img class="person-photo cols-2-of-12" src="assets/images/headshots/IMG_5493_maloney_bw.jpg" style="display:none;">
               <article class="cols-9-of-12">
-                <h3 class="person-name">Welcome</h3> 
-                <p class="person-desc">Intro intro intro.</p>
-                <div class="row social-media">
-                  <div class="cols-3-of-12">
-                    <a href="http://linkedin.com/" class="person-linkedin" style="display:none;"><img src="assets/images/linked_in.png"></a>
-                  </div>
-                  <div class="cols-3-of-12">
-                    <a href="http://github.com" class="person-github" style="display:none;"><img src="assets/images/git.png"></a>
-                  </div>
-                  <div class="cols-3-of-12">
-                    <a href="http://twitter.com" class="person-twitter" style="display:none;"><img src="assets/images/twitter.png" class="person-twitter"></a>
-                  </div>
-                  <div class="cols-3-of-12">
-                    <a href="http://www.example.com/" class="person-site" style="display:none;"><img src="assets/images/browser.png"></a>
-                  </div>
-                </div>
+                <h3 class="person-name"></h3> 
+                <p class="person-desc"></p>
+                <span class="social-media">
+                  <a href="http://linkedin.com/"  class="person-linkedin" style="display:none;">
+                    <img src="assets/images/linked_in.png">
+                  </a>
+                  <a href="http://github.com"     class="person-github"   style="display:none;">
+                    <img src="assets/images/git.png">
+                  </a>
+                  <a href="http://twitter.com"    class="person-twitter"  style="display:none;">
+                    <img src="assets/images/twitter.png" class="person-twitter">
+                  </a>
+                  <a href="http://www.example.com/" class="person-site" style="display:none;"><img src="assets/images/browser.png"></a>
+                </span>
               </article>
             </div>
-
-            <!-- student thumbnails -->
-            <!-- <div class="cols-12-of-12"> -->
-              <div class="row">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5302_adam_bw.jpg" data-id="adam">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/_mg_5370_alex_bw.jpg" data-id="alexh">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5493_maloney_bw.jpg" data-id="maloney">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5338_jonny_bw.jpg" data-id="jonny">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5363_jack_bw.jpg" data-id="jack">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5401_jamie_bw.jpg" data-id="jamie">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5408_alexf_bw.jpg" data-id="alexf">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5431_daida_bw.jpg" data-id="daida">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5458_selina_bw.jpg" data-id="selina">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5568_sophie_bw.jpg" data-id="sophie">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5523_winna_bw.jpg" data-id="winna">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5314_ralph_bw.jpg" data-id="ralph">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5651_sharif_bw.jpg" data-id="sharif">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5597_neha_bw.jpg" data-id="neha">
-                  <img class="person-icon cols-2-of-12 square-thumb" src="assets/images/headshots/IMG_5554_oli_bw.jpg" data-id="oli">
-              </div>
-            <!-- </div> -->
-          </div>
-
-          <!-- project descriptions -->
-          <div class="row">
-              <a name="projects"><h2>The Projects</h2></a>
-          </div>
-
-          <div class="row">
-            <div class="cols-3-of-12">
-              <div class="project">
-                <article>
-                  <h5>Project 1 <br>
-                    Week ##</h5>
-                  <h4>Schedule Planner, Crosses and Naughts, Music Site</h4>
-                  <p>Concept concept concept concept concept concept concept concept concept concept</p>
-                </article>
-              </div>
-            </div>
-              
-            <div class="cols-3-of-12">
-              <div class="project">
-                <article>
-                  <h5>Project 2 <br>
-                    Week ##</h5>
-                  <h4>Groupwork: <br>
-                    Feel-Good Twitter, <br>
-                    Dating Site, <br>
-                    Feed Reader</h4>
-                  <p>Concept concept concept concept concept concept concept concept concept concept</p>
-                </article>
-              </div>
-            </div>
-
-            <div class="cols-3-of-12">
-              <div class="project">
-                <article>
-                  <h5>Surprise! <br>
-                    Hackathon</h5>
-                  <h4>Build a Gem</h4>
-                  <p>Concept concept concept concept concept concept concept concept concept concept</p>
-                </article>
-              </div>
-            </div>
-
-            <div class="cols-3-of-12">
-              <div class="project">
-                <article>
-                  <h5>Project 4 <br>
-                    Week ##</h5>
-                  <h4>Final Projects</h4>
-                  <p>Concept concept concept concept concept concept concept concept concept concept</p>
-                </article>
-              </div>          
+            <!-- thumbnails -->
+            <div class="row">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5302_adam_bw.jpg" data-id="adam">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/_mg_5370_alex_bw.jpg" data-id="alexh">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5493_maloney_bw.jpg" data-id="maloney">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5338_jonny_bw.jpg" data-id="jonny">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5363_jack_bw.jpg" data-id="jack">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5401_jamie_bw.jpg" data-id="jamie">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5408_alexf_bw.jpg" data-id="alexf">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5431_daida_bw.jpg" data-id="daida">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5458_selina_bw.jpg" data-id="selina">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5568_sophie_bw.jpg" data-id="sophie">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5523_winna_bw.jpg" data-id="winna">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5314_ralph_bw.jpg" data-id="ralph">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5651_sharif_bw.jpg" data-id="sharif">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5597_neha_bw.jpg" data-id="neha">
+              <img class="person-icon cols-1-of-12" src="assets/images/headshots/IMG_5554_oli_bw.jpg" data-id="oli">
             </div>
           </div>
+        </section>
 
-          <!-- instructors -->
+        <!-- projects section -->
+        <section class="concepts">
+          
           <div class="row">
-              <a name="instructors"><h2>The Instructors</h2></a>
+            <h2>The Concepts</h2>
+            <a name="concepts" class="anchor"></a>
+            <p>We were taught a lot of concepts. Over 12 weeks with three projects, one hackathon and not much sleep, we learned and practiced a full range of front- and back-end concepts. Take a look at some of what we covered... </p>
+
+            <div class="cols-2-of-12">
+                <article>
+                  <ul>
+                    <li>OOP</li>
+                    <li>Agile Development</li>
+                    <li>TDD</li>
+                    <li>BDD</li>
+                    <li>Ruby</li>
+                    <li>Variables</li>
+                    <li>Conditionals</li>
+                    <li>Blocks</li>
+                    <li>Enumerators</li>
+                    <li>Strings, Symbols</li>
+                    <li>Arrays, Hashes</li>
+                    <li>Methods</li>
+                    <li>Classes</li>
+                    <li>Inheritance</li>
+                    <li>Scope</li>
+                    <li>Patterns</li>
+                    <li>Refactoring</li>
+                  </ul>
+                </article>
+            </div>
+            <div class="cols-2-of-12">
+              <article>
+                <ul>
+                  <li>HTTP Requests</li>
+                  <li>URL, URI</li>
+                  <li>Networking</li>                    
+                  <li>SSH</li>
+                  <li>Sessions</li>
+                  <li>Authentication</li>
+                  <li>Authorization</li>
+                  <li>Web Scraping</li>
+                  <li>Cookies</li>
+                  <li>HTTP APIs</li>
+                  <li>RESTful APIs</li>
+                  <li>HTTParty</li>                    
+                  <li>Uploads</li>
+                  <li>File I/O</li>
+                  <li>Amazon S3 AWS</li>
+                  <li>Sublime</li>
+                  <li>Environment variables</li>                    
+                </ul>
+              </article>
+            </div>
+            <div class="cols-2-of-12">
+              <article>
+                <ul>
+                  <li>Version Control</li>
+                  <li>Git and Github</li>
+                  <li>Sinatra</li>                    
+                  <li>Rails</li>
+                  <li>MVC</li>
+                  <li>Models</li>
+                  <li>Views</li>
+                  <li>Controllers</li>
+                  <li>Routing</li>                    
+                  <li>i18n</li>
+                  <li>Helpers</li>
+                  <li>Mailers</li>
+                  <li>Serializers</li>
+                  <li>Modules</li>
+                  <li>Callbacks</li>
+                  <li>Rake Tasks</li>
+                  <li>Rails Console</li>
+                </ul>
+              </article>
+            </div>
+            <div class="cols-2-of-12">
+              <article>
+                <ul>
+                  <li>ActiveRecord</li>
+                  <li>Migrations</li>
+                  <li>Validations</li>
+                  <li>Relational DBs</li>
+                  <li>SQL</li>
+                  <li>Joins</li>
+                  <li>Includes</li>
+                  <li>MongoDB</li>
+                  <li>Redis</li>
+                  <li>Query string</li>
+                  <li>Deploying</li>
+                  <li>Heroku</li>
+                  <li>Mandrill</li>
+                  <li>Twilio</li>
+                  <li>Exceptions</li>
+                  <li>Exception Handling</li>
+                  <li>Logs</li>
+                </ul>
+              </article>
+            </div>
+            <div class="cols-2-of-12">
+              <article>
+                <ul>
+                  <li>Cancan</li>
+                  <li>Carrierwave</li>
+                  <li>Bcrypt</li>
+                  <li>Devise</li>
+                  <li>Sidekiq</li>
+                  <li>Textacular</li>
+                  <li>Factory Girl</li>
+                  <li>High Voltage</li>
+                  <li>Rspec</li>
+                  <li>Nokogiri</li>
+                  <li>Acts as Draggable</li>
+                  <li>Acts as Taggable</li>
+                  <li>Will Paginate</li>
+                  <li>Nested Forms</li>
+                  <li>Geocoder</li>
+                  <li>Jekyll</li>
+                  <li>Better Errors</li>
+                </ul>
+              </article>
+            </div>
+            <div class="cols-2-of-12">
+              <article>
+                <ul>
+                  <li>Javascript</li>
+                  <li>jQuery</li>
+                  <li>Coffeescript</li>
+                  <li>JSON</li>
+                  <li>AJAX</li>
+                  <li>Ember</li>
+                  <li>Jasmine</li>
+                  <li>Underscore.js</li>                    
+                  <li>Templates</li>
+                  <li>Responsive design</li>
+                  <li>HTML</li>
+                  <li>HAML</li>
+                  <li>Handlebars</li>
+                  <li>ERB</li>                    
+                  <li>CSS</li>
+                  <li>SCSS, SASS</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- instructor section-->
+        <section class="instructors">
+          <div class="row intro-text">
+            <h2>The Instructors</h2>
+            <a name="instructors" class="anchor"></a>
+            <h3 >They taught us everything we know</h3> 
+            <p>Well, let's be honest. They taught us a lot more than we know, but some of it didn't commit to memory. But we are hackers now, thanks to these four.</p>
           </div>
           <div id="instructor-profiles" class="profiles">
-            <div class="row person-profile">
-              <img class="person-photo cols-3-of-12" src="assets/images/headshots/img_5510_gerry_bw.jpg" style="display:none;">
-              <article class="cols-9-of-12">
-                <h3 class="person-name">Welcome</h3> 
-                <p class="person-desc">Intro intro intro.</p>
-                <div class="row social-media">
-                  <div class="cols-1-of-12">
-                    <a href="http://linkedin.com/" class="person-linkedin" style="display:none;"><img src="assets/images/linked_in.png"></a>
-                  </div>
-                  <div class="cols-1-of-12">
-                    <a href="http://github.com" class="person-github" style="display:none;"><img src="assets/images/git.png"></a>
-                  </div>
-                  <div class="cols-1-of-12">
-                    <a href="http://twitter.com" class="person-twitter" style="display:none;"><img src="assets/images/twitter.png" class="person-twitter"></a>
-                  </div>
-                  <div class="cols-1-of-12">
-                    <a href="http://www.example.com/" class="person-site" style="display:none;"><img src="assets/images/browser.png"></a>
-                  </div>
-                  <div class="cols-8-of-12"></div>
-                </div>
-              </article>
-            </div>
+              <!-- profile -->
+              <div class="row person-profile" style="display:none;">
+                <img class="person-photo cols-2-of-12" src="assets/images/headshots/img_5510_gerry_bw.jpg" style="display:none;">
+                <article class="cols-9-of-12">
+                  <h3 class="person-name"></h3> 
+                  <p class="person-desc"></p>
+                    <span class="social-media">
+                      <a href="http://linkedin.com/"  class="person-linkedin" style="display:none;">
+                        <img src="assets/images/linked_in.png">
+                      </a>
+                      <a href="http://github.com"     class="person-github"   style="display:none;">
+                        <img src="assets/images/git.png">
+                      </a>
+                      <a href="http://twitter.com"    class="person-twitter"  style="display:none;">
+                        <img src="assets/images/twitter.png" class="person-twitter">
+                      </a>
+                      <a href="http://www.example.com/" class="person-site" style="display:none;"><img src="assets/images/browser.png"></a>
+                    </span>
+                </article>
+              </div>
 
-            <div class="row">
-              <div class="cols-3-of-12">
-                <img class="instructor person-icon" src="assets/images/headshots/img_5510_gerry_bw.jpg" data-id="gerry">
-              </div>
-              <div class="cols-3-of-12">
-                <img class="instructor person-icon" src="assets/images/headshots/jon_bw_new.jpg" data-id="jon">
-              </div>
-              <div class="cols-3-of-12">
-                <img class="instructor person-icon" src="assets/images/headshots/img_5636_david_bw.jpg" data-id="david">
-              </div>
-              <div class="cols-3-of-12">
-                <img class="instructor person-icon" src="assets/images/headshots/julien_bw_new.jpg" data-id="julien">
+              <!-- thumbnails -->
+              <div class="row">
+                <img class="cols-1-of-12 person-icon" src="assets/images/headshots/img_5510_gerry_bw.jpg" data-id="gerry">
+                <img class="cols-1-of-12 person-icon" src="assets/images/headshots/jon_bw_new.jpg" data-id="jon">
+                <img class="cols-1-of-12 person-icon" src="assets/images/headshots/img_5636_david_bw.jpg" data-id="david">
+                <img class="cols-1-of-12 person-icon" src="assets/images/headshots/julien_bw_new.jpg" data-id="julien">
               </div>
             </div>
+        </section>
+      
+      </div>
+      <!-- end main content -->
 
-          </div>
-
-          <!-- footer -->
-          <div class="row">
-            <footer>
-              <p>footer</p>
-            </footer>
-          </div>
-        
-        </div>
-
-        <!-- spacer -->
-        <div class="cols-2-of-12"></div>
-
+      <!-- spacer -->
+      <div class="spacer cols-2-of-12"></div>
     </div>
+    <!-- footer -->
+    <footer>
+      <p><span class="bold">Web Development Immersive Course Webpage</span> General Assembly London <span>2013</span></p>
+    </footer>
+
+    <!-- animation script -->
+    <script src="assets/javascripts/waypoints.min.js"></script>
     <script>
-    //     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    //     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    //     g.src='//www.google-analytics.com/ga.js';
-    //     s.parentNode.insertBefore(g,s)}(document,'script'));
+      var $head = $( '#ha-header' );
+      $( '.ha-waypoint' ).each( function(i) {
+        var $el = $( this ),
+          animClassDown = $el.data( 'animateDown' ),
+          animClassUp = $el.data( 'animateUp' );
+
+        $el.waypoint( function( direction ) {
+          if( direction === 'down' && animClassDown ) {
+            $head.attr('class', 'ha-header ' + animClassDown);
+          }
+          else if( direction === 'up' && animClassUp ){
+            $head.attr('class', 'ha-header ' + animClassUp);
+          }
+        }, { offset: '100%' } );
+      } );
     </script>
+
   </body>
 </html>
