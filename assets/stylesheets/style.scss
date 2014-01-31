@@ -346,10 +346,6 @@ a.trigger{
 // students and instructors sections
 // ************************************************************************************************************
 
-.selected{
-	opacity: .5;
-}
-
 .intro-text{
 	p{
 		padding: 0;
@@ -401,6 +397,19 @@ a.trigger{
 	height: auto !important;
 }
 
+.person-icon:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.selected{
+  opacity: 0.5;
+}
+
+.person-icon.selected:hover {
+  opacity: 0.5;
+  cursor: default;
+}
 
 // ************************************************************************************************************
 // concepts section
