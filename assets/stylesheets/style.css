@@ -243,9 +243,6 @@ a.trigger {
   margin: 0;
   padding: 0; }
 
-.selected {
-  opacity: .5; }
-
 .intro-text p {
   padding: 0;
   margin: 0 0 1.5em 0; }
@@ -281,6 +278,17 @@ a.trigger {
   margin: 5px 0 !important;
   width: 100%;
   height: auto !important; }
+
+.person-icon:hover {
+  opacity: 0.9;
+  cursor: pointer; }
+
+.selected {
+  opacity: 0.5; }
+
+.person-icon.selected:hover {
+  opacity: 0.5;
+  cursor: default; }
 
 .concepts ul {
   font-size: .8em;
